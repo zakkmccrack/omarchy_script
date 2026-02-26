@@ -26,10 +26,10 @@
   },
   "group/left3": {
     "orientation": "inherit",
-    "modules": ["mpris"]
+    "modules": []
   },
   "modules-left": ["group/left1", "group/left2", "group/left3"],
-  "modules-center": ["hyprland/window"],
+  "modules-center": ["hyprland/window", "mpris"],
   "modules-right": [
     "group/tray-expander",
     "backlight",
@@ -98,9 +98,9 @@
     "format": "{title} - {class}",
     "max-length": 55,
     "rewrite": {
-      " - ": "", // if no window is focused, a single dash is displayed, this removes it
+
       "(.*?) - Chromium - chromium": "   $1 ",
-      "(.*chrome)...(.*)": "   $1 ",
+      "(.*firefox)...(.*)": "   $1 ",
       "(.*) - Obsidian - .* - obsidian": "   $1 ",
       "(.*nvim)...(.*)": "   $2 ",
       "(.*code) - (.*)": " 󰨞  $1 ",
@@ -284,7 +284,7 @@
   "mpris": {
     "format": "{player_icon} {dynamic}",
     "format-paused": "<span color='grey'>{status_icon} {dynamic}</span>",
-    "max-length": 50,
+    "max-length": 100,
     "interval": 1,
     "player-icons": {
       "default": "⏸",

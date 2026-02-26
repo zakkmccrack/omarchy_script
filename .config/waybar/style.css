@@ -4,7 +4,7 @@
 
 * {
   font-family: 'JetBrainsMono Nerd Font';
-  font-size: 12px;
+  font-size: 13px;
   font-weight: bold;
   min-height: 0px;
   }
@@ -17,8 +17,8 @@
 }
 
 window#waybar > box {
-    border-radius: 12px;
-    margin: 1px 8px 6px 8px;
+    border-radius: 0px;
+    margin: 0px 0px 0px 0px;
     background-color: alpha(@background, 1);
     box-shadow: 4px 4px 2px 1px alpha(black, 0.8);
 }
@@ -45,7 +45,7 @@ tooltip {
  /* --- Sub-Groups ---*/
 
 #left1{
-  border-radius: 12px;
+  border-radius: 0px;
   opacity: 1;
   border: 0.5px solid alpha(@foreground, 0.8);
   background-color: alpha(@background, 0.9);
@@ -67,10 +67,10 @@ tooltip {
 
 #mpris{
   margin: 0px;
-  padding: 0px 6px;
+  padding: 0px 20px;
   padding-left: 6px;
-  border-radius: 12px;
-  border: 0.5px solid alpha(@foreground, 0.8);
+  border-radius: 0px;
+  border-left: 0.5px solid alpha(@foreground, 0.8);
   background-color: alpha(@background, 0.9);
 }
 
@@ -80,7 +80,7 @@ tooltip {
   color: @foreground;
   margin-left: 4px;
   padding: 0px 1px;
-  border-radius: 12px;
+  border-radius: 0px;
   opacity: 1;
   border: 0.5px solid alpha(@foreground, 0.8);
   background-color: alpha(@background, 0.9);
@@ -89,7 +89,7 @@ tooltip {
 .modules-right {
   color: @foreground;
   padding: 0px 1px;
-  border-radius: 12px;
+  border-radius: 0px;
   opacity: 1;
   border: 0.5px solid alpha(@foreground, 0.8);
   background-color: alpha(@background, 0.9);
